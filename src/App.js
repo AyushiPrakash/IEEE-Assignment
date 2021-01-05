@@ -1,7 +1,7 @@
 import styled, { createGlobalStyle } from "styled-components";
 import bg from "./assets/FerrariBackground.jpg";
-import NavVertical from "./components/NavVertical";
-import NavHorizontal from "./components/NavHorizontal";
+import NavVertical from "./Components/NavVertical";
+import NavHorizontal from "./Components/NavHorizontal";
 
 const GlobalStyle = createGlobalStyle`
 *{
