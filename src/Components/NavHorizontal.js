@@ -62,8 +62,8 @@ const Nav = styled.section`
     font-size: 22pt;
     font-weight: bolder;
     font-family: "SF PRO Text";
-    letter-spacing: 0.25rem;
     line-height: 0.75rem;
+    letter-spacing: 0.25rem;
     padding: 0 0 1rem 0;
     cursor: pointer;
     border-bottom: solid 4px #fdf100;
