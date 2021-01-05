@@ -1,24 +1,43 @@
-import logo from './logo.svg';
-import './App.css';
+import styled, { createGlobalStyle } from "styled-components";
+import bg from "./assets/FerrariBackground.jpg";
+import NavVertical from "./components/NavVertical";
+import NavHorizontal from "./components/NavHorizontal";
+
+const GlobalStyle = createGlobalStyle`
+*{
+  box-sizing:border-box;
+}
+
+body{
+  background: url(${bg}) no-repeat center center;
+  background-size:cover;
+  min-height:100vh;
+}
+@font-face {
+    font-family:"SF PRO Text";
+    src: url("./assets/SF-Pro-Text-Heavy.otf") format("opentype");
+}
+
+@font-face {
+  font-family:"SF PRO Text" ;
+  font-weight:lighter;
+  src: url("./assets/SF-Pro-Text-Light.otf") format("opentype");
+}
+
+@font-face {
+  font-family:"SF PRO Text" ;
+  font-weight:bold;
+  src: url("./assets/SF-Pro-Text-Semibold.otf") format("opentype");
+}
+`;
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <GlobalStyle />
+      <NavVertical />
+      <NavHorizontal />
+    </>
   );
 }
 
